@@ -7,10 +7,22 @@ namespace QueenAttack.TestTools
     public class QueenAttackTest
     {
         [TestMethod]
-        public void QueenPlace_CanPlaceQueen_True()
+        public void QueenPlace_CanPlaceQueenInt_True()
         {
             Queen testQueenAttack = new Queen();
             Assert.AreEqual(true, testQueenAttack.QueenPlace(3,3));
+        }
+        [TestMethod]
+        public void QueenPlace_CanPlaceQueenChar_True()
+        {
+          Queen testQueenAttack = new Queen();
+          Assert.AreEqual(true, testQueenAttack.QueenPlace('4','8'));
+        }
+        [TestMethod]
+        public void UserPlace_CanPlaceUserInt_True()
+        {
+          Queen testQueenAttack = new Queen();
+          Assert.AreEqual(true, testQueenAttack.UserPlace(3,4));
         }
     }
 }

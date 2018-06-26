@@ -17,7 +17,7 @@ namespace QueenAttack
         return true;
       }
     }
-    public bool UserPlace()
+    public bool UserPlace(int inputUserX, int inputUserY)
     {
       return false;
     }
