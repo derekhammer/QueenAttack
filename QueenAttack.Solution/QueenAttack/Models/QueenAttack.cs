@@ -54,7 +54,14 @@ namespace QueenAttack
     }
     public bool PlacementCheckStack(int queenX, int queenY, int userX, int userY)
     {
-        return true;
+        if(queenX == userX && queenY == userY)
+        {
+            return false;
+        }
+        else
+        {
+          return true;
+        }
     }
     public bool CanAttack()
     {
