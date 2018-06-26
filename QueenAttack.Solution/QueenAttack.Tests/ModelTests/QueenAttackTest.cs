@@ -24,5 +24,11 @@ namespace QueenAttack.TestTools
           Queen testQueenAttack = new Queen();
           Assert.AreEqual(true, testQueenAttack.UserPlace(3,4));
         }
+        [TestMethod]
+        public void UserPlace_CanPlaceUserChar_True()
+        {
+          Queen testQueenAttack = new Queen();
+          Assert.AreEqual(true, testQueenAttack.UserPlace('2','7'));
+        }
     }
 }

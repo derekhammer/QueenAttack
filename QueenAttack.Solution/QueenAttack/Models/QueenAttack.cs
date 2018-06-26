@@ -19,7 +19,18 @@ namespace QueenAttack
     }
     public bool UserPlace(int inputUserX, int inputUserY)
     {
-      return false;
+      return true;
+    }
+    public bool UserPlace(char inputUserX, char inputUserY)
+    {
+      if(!char.IsNumber(inputUserX) == true || !char.IsNumber(inputUserY) == true)
+      {
+        return false;
+      }
+      else
+      {
+        return true;
+      }
     }
     public bool CanAttack()
     {
