@@ -73,6 +73,10 @@ namespace QueenAttack
       {
         return true;
       }
+      else if((queenX - userX) == (queenY - userY))
+      {
+        return true;
+      }
       else
       {
       return false;

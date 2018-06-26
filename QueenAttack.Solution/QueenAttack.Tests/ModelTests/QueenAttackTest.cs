@@ -58,6 +58,11 @@ namespace QueenAttack.TestTools
           Queen testQueenAttack = new Queen();
           Assert.AreEqual(true, testQueenAttack.CanAttack(3,8,2,8));
         }
-
+        [TestMethod]
+        public void CanAttack_CanAttackV_True()
+        {
+          Queen testQueenAttack = new Queen();
+          Assert.AreEqual(true, testQueenAttack.CanAttack(1,1,8,8));
+        }
     }
 }
