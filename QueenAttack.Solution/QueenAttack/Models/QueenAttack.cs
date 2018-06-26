@@ -65,8 +65,18 @@ namespace QueenAttack
     }
     public bool CanAttack(int queenX, int queenY, int userX, int userY)
     {
-      
+      if(queenX == userX)
+      {
+        return true;
+      }
+      else if (queenY == userY)
+      {
+        return true;
+      }
+      else
+      {
       return false;
+      }
     }
   }
 }
