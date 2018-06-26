@@ -35,5 +35,11 @@ namespace QueenAttack.TestTools
         // {
         //
         // }
+        [TestMethod]
+        public void PlacementCheck_CanPlaceOutsideRange_False()
+        {
+            Queen testQueenAttack = new Queen();
+            Assert.AreEqual(false, testQueenAttack.PlacementCheck(8,9));
+        }
     }
 }
