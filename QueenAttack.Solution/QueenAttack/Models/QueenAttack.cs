@@ -1,3 +1,4 @@
+using System;
 namespace QueenAttack
 {
   public class Queen
@@ -73,7 +74,7 @@ namespace QueenAttack
       {
         return true;
       }
-      else if((queenX - userX) == (queenY - userY))
+      else if(Math.Abs(queenX - userX) == Math.Abs(queenY - userY))
       {
         return true;
       }

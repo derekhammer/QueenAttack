@@ -62,7 +62,7 @@ namespace QueenAttack.TestTools
         public void CanAttack_CanAttackV_True()
         {
           Queen testQueenAttack = new Queen();
-          Assert.AreEqual(true, testQueenAttack.CanAttack(1,1,8,8));
+          Assert.AreEqual(true, testQueenAttack.CanAttack(5,4,4,5));
         }
     }
 }
