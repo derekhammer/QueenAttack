@@ -32,6 +32,14 @@ namespace QueenAttack
         return true;
       }
     }
+    // public int PlacementConversion(char num)
+    // {
+    //
+    // }
+    public bool PlacementCheck(int inputQueenX, int inputQueenY, int inputUserX, int inputUserY)
+    {
+
+    }
     public bool CanAttack()
     {
       return false;

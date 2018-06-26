@@ -30,5 +30,10 @@ namespace QueenAttack.TestTools
           Queen testQueenAttack = new Queen();
           Assert.AreEqual(true, testQueenAttack.UserPlace('2','7'));
         }
+        // [TestMethod]
+        // public void QueenPlace_CanConvertCharToInt_True()
+        // {
+        //
+        // }
     }
 }
