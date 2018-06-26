@@ -7,10 +7,10 @@ namespace QueenAttack.TestTools
     public class QueenAttackTest
     {
         [TestMethod]
-        public void CanAttack_CanPlaceQueen_True()
+        public void QueenPlace_CanPlaceQueen_True()
         {
             Queen testQueenAttack = new Queen();
-            Assert.AreEqual(true, testQueenAttack.QueenPlace());
+            Assert.AreEqual(true, testQueenAttack.QueenPlace(3,3));
         }
     }
 }
