@@ -15,8 +15,8 @@ namespace QueenAttack.TestTools
         [TestMethod]
         public void QueenPlace_CanPlaceQueenChar_True()
         {
-          Queen testQueenAttack = new Queen();
-          Assert.AreEqual(true, testQueenAttack.QueenPlace('4','8'));
+          Queen piss = new Queen();
+          Assert.AreEqual(true, piss.QueenPlace('4','8'));
         }
         [TestMethod]
         public void UserPlace_CanPlaceUserInt_True()
