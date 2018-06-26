@@ -37,7 +37,7 @@ namespace QueenAttack
       }
     }
 
-    public bool PlacementCheck(int inputX, int inputY)
+    public bool PlacementCheckRange(int inputX, int inputY)
     {
       if(inputX > 8 || inputX < 1)
       {
@@ -51,6 +51,10 @@ namespace QueenAttack
       {
         return true;
       }
+    }
+    public bool PlacementCheckStack(int queenX, int queenY, int userX, int userY)
+    {
+        return true;
     }
     public bool CanAttack()
     {

@@ -36,10 +36,16 @@ namespace QueenAttack.TestTools
         //
         // }
         [TestMethod]
-        public void PlacementCheck_CanPlaceOutsideRange_False()
+        public void PlacementCheckRange_CanPlaceOutsideRange_False()
         {
             Queen testQueenAttack = new Queen();
-            Assert.AreEqual(false, testQueenAttack.PlacementCheck(8,9));
+            Assert.AreEqual(false, testQueenAttack.PlacementCheckRange(8,9));
+        }
+        [TestMethod]
+        public void PlacementCheckStack_CanPlaceSameCoordinates_False()
+        {
+            Queen testQueenAttack = new Queen();
+            Assert.AreEqual(false, testQueenAttack.PlacementCheckStack(1,1,1,1));
         }
     }
 }
