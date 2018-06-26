@@ -6,6 +6,7 @@ namespace QueenAttack.TestTools
     [TestClass]
     public class QueenAttackTest
     {
+        //Placement Input Check
         [TestMethod]
         public void QueenPlace_CanPlaceQueenInt_True()
         {
@@ -15,8 +16,8 @@ namespace QueenAttack.TestTools
         [TestMethod]
         public void QueenPlace_CanPlaceQueenChar_True()
         {
-          Queen piss = new Queen();
-          Assert.AreEqual(true, piss.QueenPlace('4','8'));
+          Queen testQueenAttack = new Queen();
+          Assert.AreEqual(true, testQueenAttack.QueenPlace('4','8'));
         }
         [TestMethod]
         public void UserPlace_CanPlaceUserInt_True()
@@ -30,11 +31,8 @@ namespace QueenAttack.TestTools
           Queen testQueenAttack = new Queen();
           Assert.AreEqual(true, testQueenAttack.UserPlace('2','7'));
         }
-        // [TestMethod]
-        // public void QueenPlace_CanConvertCharToInt_True()
-        // {
-        //
-        // }
+
+        //Placement validation
         [TestMethod]
         public void PlacementCheckRange_CanPlaceOutsideRange_False()
         {
@@ -47,5 +45,7 @@ namespace QueenAttack.TestTools
             Queen testQueenAttack = new Queen();
             Assert.AreEqual(false, testQueenAttack.PlacementCheckStack(1,1,1,1));
         }
+        //Attack validations
+        
     }
 }
