@@ -46,6 +46,12 @@ namespace QueenAttack.TestTools
             Assert.AreEqual(false, testQueenAttack.PlacementCheckStack(1,1,1,1));
         }
         //Attack validations
+        [TestMethod]
+        public void CanAttack_CanAttackX_True()
+        {
+          Queen testQueenAttack = new Queen();
+          Assert.AreEqual(true, testQueenAttack.CanAttack(3,8,3,2))
+        }
         
     }
 }

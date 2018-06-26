@@ -63,8 +63,9 @@ namespace QueenAttack
           return true;
         }
     }
-    public bool CanAttack()
+    public bool CanAttack(int queenX, int queenY, int userX, int userY)
     {
+      
       return false;
     }
   }
